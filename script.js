@@ -29,7 +29,7 @@ function displayContactMethods(){
             link: 'https://www.linkedin.com/in/kamrongonzales' 
         },
         {   name: 'Email', 
-            icon: 'fa-regular fa-envelope', 
+            icon: 'fa-solid fa-envelope', 
             link: 'mailto:gonzaleskamron@gmail.com' 
         },
         {   name: 'GitHub', 
