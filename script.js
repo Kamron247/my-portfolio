@@ -90,11 +90,28 @@ function displaySkills(){
     let skills = document.getElementById('skills');
 
     const skills_map = [
-        { name: 'C++', icon: 'devicon-cplusplus-plain' },
-        { name: 'Python', icon: 'devicon-python-plain' },
-        { name: 'HTML', icon: 'devicon-html5-plain' },
-        { name: 'CSS', icon: 'devicon-css3-plain' },
-        { name: 'Javascript', icon: 'devicon-javascript-plain' }
+        {   name: 'C++', 
+            icon: 'devicon-cplusplus-plain',
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=c%2B%2B&sort='
+        },
+        {   name: 'Python', 
+            icon: 'devicon-python-plain',
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=python&sort='
+        },
+        {   
+            name: 'HTML', 
+            icon: 'devicon-html5-plain', 
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=html&sort='
+        },
+        {   
+            name: 'CSS', 
+            icon: 'devicon-css3-plain',
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=css&sort='
+        },
+        {   name: 'Javascript', 
+            icon: 'devicon-javascript-plain', 
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=javascript&sort='
+        }
     ]
 
     //create unordered list
@@ -106,7 +123,12 @@ function displaySkills(){
         let skill = skills_map[i];
         let skill_item = document.createElement('li');
         skill_item.classList.add('list-group-item');
-        skill_item.innerHTML = `<i class="${skill.icon}" onmouseover="skillHover(this)" onmouseleave="skillHover(this)"></i>`;
+        skill_item.innerHTML = `
+            <i class="${skill.icon}" 
+                onmouseover="skillHover(this)" 
+                onmouseleave="skillHover(this)"
+                onclick="window.open('${skill.link}')">
+            </i>`;
         skills_list.appendChild(skill_item);
     }
     skills.appendChild(skills_list);
