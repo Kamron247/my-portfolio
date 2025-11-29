@@ -32,6 +32,7 @@
         <a class="navbar-brand" href="#work">Work</a>
     </nav> -->
     <!-- Content Section -->
+
     <div class="container-fluid">
         <!-- About Section -->
         <div class="section" id="about">
@@ -53,91 +54,36 @@
         </div>
 
         <!-- Skills Section -->
-        <div class="section" id="skills"></div>
+        <div class="section" id="skills">
+            <ul class="list-group list-group-horizontal justify-content-around" id="skill-list">
+                <!-- Items inserted here dynamically -->
+            </ul>
+        </div>
 
         <!-- Details Section -->
         <div class="section" id="details">
             <!-- add education & experience subsection -->
                 <div class="card text-light bg-dark border-0" style="gap:2rem;">
+                    <!-- Education List -->
                     <ul class="list-group bg-dark px-0" style="gap:0.75rem;" id="education">
-                        <h5 class="list-group-item w-100 border-0 bg-transparent text-dark-emphasis" id="education-title">
+                        <h5 class="list-group-item w-100 border-0 bg-transparent text-dark-emphasis">
                             <i class="fa-solid fa-graduation-cap"></i>
                             Education
                         </h5>
-                        <div class="list-group-item rounded-start-pill w-100 px-3 border-0 d-flex row align-items-center bg-black bg-opacity-25">
-                            <!-- Display the College, Major, and Year -->
-                            <div class="col-auto px-0 py-1">
-                                <img 
-                                    src="images/RIT_seal.jpg" 
-                                    alt="Rochester Institute of Technology" 
-                                    class="img-fluid" 
-                                    style="width: 5rem; height: 5rem; border-radius: 50%;">
-                            </div>
-                            <div class="col text-start">
-                                <div class="row pt-2 mx-0 text-nowrap" style="display: flex; justify-content: center; align-items: center;">
-                                    <h3 class="col px-0 mx-0 text-light">B.S - Software Engineering</h3>
-                                    <h6 class="col px-0 mx-0 text-end text-dark-emphasis">Aug 2024</h6>
-                                </div>
-                                <h5 class="text-dark-emphasis">Rochester Institute of Technology</h5>
-                            </div>
-                        </div>
-                        <div class="list-group-item rounded-start-pill w-100 border-0 d-flex row align-items-center bg-black bg-opacity-25">
-                            <!-- Display the College, Major, and Year -->
-                            <div class="col-auto px-0 py-1">
-                                <img 
-                                    src="images/DVC_Round.jpg" 
-                                    alt="Rochester Institute of Technology" 
-                                    class="img-fluid" 
-                                    style="width: 5rem; height: 5rem; border-radius: 50%;">
-                            </div>
-                            <div class="col text-start">
-                                <div class="row pt-2 mx-0 text-nowrap" style="display: flex; justify-content: center; align-items: center;">
-                                    <h3 class="col px-0 mx-0 text-light">A.S - Computer Science</h3>
-                                    <h6 class="col px-0 mx-0 text-end text-dark-emphasis">May 2021</h6>
-                                </div>
-                                <h5 class="text-dark-emphasis">Diablo Valley College</h5>
-                            </div>
-                        </div>
                     </ul>
+                    <!-- Work List -->
                     <ul class="list-group bg-dark px-0" style="gap:0.75rem;" id="work">
-                        <h5 class="list-group-item w-100 border-0 bg-transparent text-dark-emphasis" id="work-title">
-                            <i class="fa-solid fa-id-badge"></i>
+                        <h5 class="list-group-item w-100 border-0 bg-transparent text-dark-emphasis">
+                            <i class="fa-solid fa-id-badge"></i> 
                             Work
                         </h5>
-                        <div class="list-group-item rounded-start-pill w-100 border-0 d-flex row align-items-center bg-black bg-opacity-25">
-                            <!-- Display the Image left, Display right top Job-Title, Dates, Display Right Bottom Company-Name -->
-                                <div class="col-auto px-0 py-1">
-                                    <img 
-                                        src="images/Kythera_Logo.jpg" 
-                                        alt="Kythera Space Solutions" 
-                                        class="img-fluid" 
-                                        style="width: 5rem; height: 5rem; border-radius: 50%;">
-                                </div>
-                                <div class="col text-start">
-                                    <div class="row pt-2 mx-0 text-nowrap" style="display: flex; justify-content: center; align-items: center;">
-                                        <h3 class="col px-0 m-0 text-light">Software Engineer - Intern</h3>
-                                        <h6 class="col px-0 m-0 text-end text-dark-emphasis">Jun-Dec 2023</h6>
-                                    </div>
-                                    <h5 class="text-dark-emphasis">Kythera Space Solutions</h5>
-                                </div>
-                        </div>
-                        <div class="list-group-item rounded-start-pill w-100 border-0 d-flex row align-items-center bg-black bg-opacity-25">
-                                <!-- Display the Image left, Display right top Job-Title, Dates, Display Right Bottom Company-Name -->
-                                <div class="col-auto px-0 py-1">
-                                    <img 
-                                        src="images/RIT_seal.jpg" 
-                                        alt="Rochester Institute of Technology" 
-                                        class="img-fluid" 
-                                        style="width: 5rem; height: 5rem; border-radius: 50%;">
-                                </div>
-                                <div class="col text-start">
-                                    <div class="row pt-2 mx-0 text-nowrap" style="display: flex; justify-content: center; align-items: center;">
-                                        <h3 class="col px-0 m-0 text-light">Software Engineer - Intern</h3>
-                                        <h6 class="col px-0 m-0 text-end text-dark-emphasis">Jan-May 2023</h6>
-                                    </div>
-                                    <h5 class="text-dark-emphasis">R.I.T - College of Science</h5>
-                                </div>
-                        </div>
+                    </ul>
+                    <!-- Projects List -->
+                    <ul class="list-group bg-dark px-0" style="gap:0.75rem;" id="projects">
+                        <h5 class="list-group-item w-100 border-0 bg-transparent text-dark-emphasis">
+                            <i class="fa-solid fa-id-badge"></i> 
+                            Projects
+                        </h5>
                     </ul>
                 </div>
             </div>
@@ -145,7 +91,124 @@
     </div>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="components/profession.js"></script>
+    <script src="components/skills.js"></script>
+    <script>
+        // Add skills
+        addSkill({
+            name: 'C++', 
+            icon: 'devicon-cplusplus-plain',
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=c%2B%2B&sort='
+        });
+        addSkill({
+            name: 'Python', 
+            icon: 'devicon-python-plain',
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=python&sort='
+        });
+        addSkill({
+            name: 'HTML', 
+            icon: 'devicon-html5-plain', 
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=html&sort='
+        });
+        addSkill({
+            name: 'CSS', 
+            icon: 'devicon-css3-plain',
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=css&sort='
+        });
+        addSkill({
+            name: 'Javascript', 
+            icon: 'devicon-javascript-plain', 
+            link: 'https://github.com/Kamron247?tab=repositories&q=&type=&language=javascript&sort='
+        });
+    </script>
+
+    <script src="components/contact_method.js"></script>
+
+    <script src="components/education.js"></script>
+    <script>
+        // Add education items
+        addEducation({
+            image: "images/RITCollegeOfComputing.png",
+            header: "B.S - Software Engineering",
+            subheading: "Rochester Institute of Technology",
+            date: "Aug 2024",
+            link: "https://www.rit.edu/computing/"
+        });
+
+        addEducation({
+            image: "images/DVC.jpg",
+            header: "A.S - Computer Science",
+            subheading: "Diablo Valley College",
+            date: "May 2021",
+            link: "https://www.dvc.edu/"
+        });
+    </script>
+    <script src="components/work.js"></script>
+    <script>
+        // Add work items
+        addWork({
+            image: "images/Kythera.jpg",
+            title: "Software Engineer, Co-op",
+            company: "Kythera Space Solutions",
+            date: "Jun-Dec 2023",
+            link: "https://kythera.space/"
+        });
+
+        addWork({
+            image: "images/RITCollegeOfScience.png",
+            title: "Software Engineer, Co-op",
+            company: "R.I.T - College of Science",
+            date: "Jan-May 2023",
+            link: "https://www.rit.edu/science/"
+        });
+
+        addWork({
+            image: "images/TheCoderSchool.png",
+            title: "Code Coach",
+            company: "The Coder School",
+            date: "Jan-Dec 2021",
+            link: "https://thecoderschool.com/"
+        });
+    </script>
+    <script src="components/projects.js"></script>
+    <script>
+        // Add projects
+        addProject({
+            image: "images/Godot.jpg",
+            title: "Godot Game Project",
+            details: "3D C# Godot game using modular, scalable, and robust systems. \
+            Focus on performance through targeted optimization.",
+            date: "Current",
+            link: "https://github.com/Kamron247/LearningSomethingNew-CSharp"
+
+        });
+
+        addProject({
+            image: "images/RIT.png",
+            title: "Rainforest Biodiversity Project",
+            details:"Arduino audio recorders captured 120+ hours of rainforest sounds, using ML to classify species for research.",
+            date: "",
+            link: "https://github.com/Kamron247/RIT_RainforestBioacousticsResearch"
+        });
+
+        addProject({
+            image: "images/RITCollegeOfScience.png",
+            title: "QMCA Graduate Admissions App",
+            details:"Processes 100+ applications annually with PDF reports, accelerating review time.",
+            date: "",
+            link: "https://github.com/Kamron247/QMCA-APP"
+        });
+
+        addProject({
+            image: "images/RITCollegeOfComputing.png",
+            title: "Constructify",
+            details:"AI-driven procurement platform automating orders, suppliers, and warehouse management efficiently",
+            date: "",
+            link: "https://github.com/cmb6650/constructify"
+        });
+    </script>
+    
     
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
