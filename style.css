@@ -33,10 +33,13 @@ li{
     justify-content: center;
 }
 
+.snap-item{
+    scroll-snap-align: center;
+}
+
 /* Card Section */
 .card{
     border-radius: 16px;
-    scroll-snap-align: center;
     justify-content: center;
     align-items: center;
     min-height: 340px;
